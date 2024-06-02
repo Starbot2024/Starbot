@@ -168,7 +168,6 @@ inicio:
       if (c == 'v') {
         microRA1 = 16000;
       }
-    }
     digitalWrite(dirPinDEC, HIGH);
     digitalWrite(dirPinRA, HIGH);
     delayMicroseconds(microRA1);
@@ -179,5 +178,6 @@ inicio:
     Serial.print("<");
     Serial.println(microRA2 + microRA1 + 251);
     Serial.print(">");
+    }
   }
 }
